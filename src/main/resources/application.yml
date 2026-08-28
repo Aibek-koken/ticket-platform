@@ -35,3 +35,14 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha # Сортировка контроллеров по алфавиту
+
+info:
+  title: Умная Касса (High-Load Event Platform) API
+  version: "3.0"
+  description: Документация по API высоконагруженной системы продажи билетов.
